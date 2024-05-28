@@ -1,27 +1,33 @@
-﻿<!-- Ben Mullan 2022. All Rights Reserved. -->
+﻿<!--
+	File:	index.htm - Portfolio webpage
+	Author:	Ben Mullan 2024. All Rights Reserved.
+-->
+
 <html>
 	<head>
 
 		<title>Portfolio - Ben Mullan</title>
 		<meta charset="UTF-8" />
-		<meta name="description" content="Ben Mullan Personal Site" />
-		<meta name="keywords" content="BenMullan, Ben, Mullan, Portfolio, Music, Programming, GraphPictures, DocScript" />
-		<meta name="author" content="Ben Mullan" />
-		<meta name="viewport" content="width=device-width, initial-scale=0.9" />
+		<meta name="description"	content="Ben Mullan Personal Site" />
+		<meta name="keywords"		content="BenMullan, Ben, Mullan, Portfolio, Music, Programming, GraphPictures, DocScript" />
+		<meta name="author"			content="Ben Mullan" />
+		<meta name="viewport"		content="width=device-width, initial-scale=0.9" />
 
 		<!-- Bootstrap (CSS Framework) -->
-		<link href="/Resources/Stylesheets/bootstrap.min.css" rel="Stylesheet" />
-		<script defer="true" type="text/javascript" src="/Resources/Scripts/bootstrap.bundle.min.js"></script>
+		<link href="./Resources/Stylesheets/bootstrap.min.css" rel="Stylesheet" />
+		<script defer="true" type="text/javascript" src="./Resources/Scripts/bootstrap.bundle.min.js"></script>
 
 		<!-- Bootstrap Icons; !Ensure MIME Type is configured for woff and woff2 in IIS -->
-		<link href="/Resources/Stylesheets/bootstrap-icons.css" rel="Stylesheet" />
+		<link href="./Resources/Stylesheets/bootstrap-icons.css" rel="Stylesheet" />
 
 		<!-- BM Site Stylesheet (classes starting site-*) -->
-		<link href="/Resources/Stylesheets/Site.CSS" rel="Stylesheet" />
+		<link href="./Resources/Stylesheets/Site.CSS" rel="Stylesheet" />
 		
 		<!-- jQuery -->
-		<script type="text/javascript" src="/Resources/Scripts/JQuery.Min.JS"></script>
-		<script> /* Console-Banner */ console.group(); console.info("%cPlease,\r\n%c\tHire Me!", "font-size: 800%; font-family: Inconsolata Variable Weight,Consolas,Courier New; color: #585858; font-weight: bold;", "font-size: 400%; font-family: Inconsolata Variable Weight,Consolas,Courier New; color: #0D6EFD; font-weight: bold;"); console.groupEnd(); </script>
+		<script type="text/javascript" src="./Resources/Scripts/JQuery.Min.JS"></script>
+		
+		<!-- Console-Banner -->
+		<script> console.group(); console.info("%cPlease,\r\n%c\tHire Me!", "font-size: 800%; font-family: Inconsolata Variable Weight,Consolas,Courier New; color: #585858; font-weight: bold;", "font-size: 400%; font-family: Inconsolata Variable Weight,Consolas,Courier New; color: #0D6EFD; font-weight: bold;"); console.groupEnd(); </script>
 
 	</head>
 	<body>
@@ -48,7 +54,7 @@
 		<main role="main" class="container">
 
 			<!-- Page Heading -->
-			<div class="h2 site-heading"><a href="/" class="bi-arrow-left-short">/Portfolio.htm</a></div><br/>
+			<div class="h2 site-heading"><a href="/" class="bi-arrow-left-short">/portfolio</a></div><br/>
 
 			<!-- Programming SubHeading -->
 			<div class="container pt-3">
@@ -63,7 +69,7 @@
 						<!-- GraphPictures ProjectBox -->
 						<div class="col">
 							<div class="card mb-4 rounded-3 shadow-sm">
-								<a href="https://www.youtube.com/watch?v=OfOA4RKgIlA" target="_blank"><img alt="GraphPictures" class="card-img-top" src="/Resources/Images/Portfolio/GPYouTube_WebParts.png"/></a>
+								<a href="https://www.youtube.com/watch?v=OfOA4RKgIlA" target="_blank"><img alt="GraphPictures" class="card-img-top" src="./Resources/Images/Portfolio/GPYouTube_WebParts.png"/></a>
 								<div class="card-body border-top p-2" style="background-color: #F7F7F7;">
 									<h4 class="card-title my-1" style="font-weight: bolder;">GraphPictures</h4>
 									<p class="card-text" style="line-height: 105%;"><a href="https://www.youtube.com/watch?v=OfOA4RKgIlA" target="_blank"><em>[Demo]</em></a> Suite of tools for plotting raster images and videos onto cartesian, oscillioscope, or excel graphs, as vectors with styling simple/complex options</p>
@@ -75,10 +81,10 @@
 						<!-- DocScript ProjectBox -->
 						<div class="col">
 							<div class="card mb-4 rounded-3 shadow-sm">
-								<img alt="DocScript" class="card-img-top" src="/Resources/Images/DocScript/DSIDE.PNG"/>
+								<img alt="DocScript" class="card-img-top" src="./Resources/Images/DocScript/DSIDE.PNG"/>
 								<div class="card-body border-top p-2" style="background-color: #F7F7F7;">
 									<h4 class="card-title my-1" style="font-weight: bolder;">DocScript</h4>
-									<p class="card-text" style="line-height: 100%;"><a href="https://www.youtube.com/watch?v=ybl5pVSJOOk" target="_blank"><em>[Video]</em></a> <a href="/Downloads/FinalRC0_04032023_BenMullan_ALevelCS_ProgrammingProject_WriteUp.pdf" target="_blank"><em>[Write-up]</em></a> Interpreted Programming Language system, supporting multi-client Execution Sessions, and pipelining of seperated interpretation stages</p>
+									<p class="card-text" style="line-height: 100%;"><a href="https://www.youtube.com/watch?v=ybl5pVSJOOk" target="_blank"><em>[Video]</em></a> <a href="./Downloads/FinalRC0_04032023_BenMullan_ALevelCS_ProgrammingProject_WriteUp.pdf" target="_blank"><em>[Write-up]</em></a> Interpreted Programming Language system, supporting multi-client Execution Sessions, and pipelining of seperated interpretation stages</p>
 									<a href="https://github.com/BenMullan/DocScript/releases" class="btn btn-primary py-1 bi-download" target="_blank"> Download...</a>
 								</div>
 							</div>
@@ -93,7 +99,7 @@
 						<!-- MullNet System Utilities -->
 						<div class="col">
 							<div class="card mb-4 rounded-3 shadow-sm">
-								<img alt="MullNet System Utilities" class="card-img-top" src="/Resources/Images/Portfolio/MNSysUtils.png"/>
+								<img alt="MullNet System Utilities" class="card-img-top" src="./Resources/Images/Portfolio/MNSysUtils.png"/>
 								<div class="card-body border-top p-2" style="background-color: #F7F7F7;">
 									<h4 class="card-title my-1" style="font-weight: bolder;">SysUtils (v4)</h4>
 									<p class="card-text" style="line-height: 100%;">Toolset of system utilities for Networking, Graphics, and ACPI automation, and more...</p>
@@ -105,11 +111,11 @@
 						<!-- MNKeyCommands -->
 						<div class="col">
 							<div class="card mb-4 rounded-3 shadow-sm">
-								<img alt="MullNet Keyboard Shortcut Utilities (v5 for Windows 10)" class="card-img-top" src="/Resources/Images/Portfolio/MNKeyCommandsDemonstration.png"/>
+								<img alt="MullNet Keyboard Shortcut Utilities (v5 for Windows 10)" class="card-img-top" src="./Resources/Images/Portfolio/MNKeyCommandsDemonstration.png"/>
 								<div class="card-body border-top p-2" style="background-color: #F7F7F7;">
 									<h4 class="card-title my-1" style="font-weight: bolder;">MN-KeyCommands</h4>
 									<p class="card-text" style="line-height: 100%;">Provides useful Keyboard shortcuts and utility windows; [Win] + I|N|C|S|ShiftN</p>
-									<a href="/Downloads/Programming/MNKeyCommands.v4.exe.zip" class="btn btn-primary py-1 bi-download"> Download (.zip)</a>
+									<a href="./Downloads/Programming/MNKeyCommands.v4.exe.zip" class="btn btn-primary py-1 bi-download"> Download (.zip)</a>
 								</div>
 							</div>
 						</div>
@@ -117,11 +123,11 @@
 						<!-- BaseConverter -->
 						<div class="col">
 							<div class="card mb-4 rounded-3 shadow-sm">
-								<img alt="BaseConverter Program" class="card-img-top" src="/Resources/Images/Portfolio/BaseConverterDemonstration_ExtremPerspektiv.PNG"/>
+								<img alt="BaseConverter Program" class="card-img-top" src="./Resources/Images/Portfolio/BaseConverterDemonstration_ExtremPerspektiv.PNG"/>
 								<div class="card-body border-top p-2" style="background-color: #F7F7F7;">
 									<h4 class="card-title my-1" style="font-weight: bolder;">BaseConverter</h4>
 									<p class="card-text" style="line-height: 100%;">Computes numerical values in different bases, inadvertantly creating mathematical art!</p>
-									<a href="/Downloads/Programming/BaseConverter.v6.exe.zip" class="btn btn-primary py-1 bi-download"> Download (.zip)</a>
+									<a href="./Downloads/Programming/BaseConverter.v6.exe.zip" class="btn btn-primary py-1 bi-download"> Download (.zip)</a>
 								</div>
 							</div>
 						</div>
@@ -129,11 +135,11 @@
 						<!-- PolygonCircles -->
 						<div class="col">
 							<div class="card mb-4 rounded-3 shadow-sm">
-								<img alt="PolygonCircles Graphics Program" class="card-img-top" src="/Resources/Images/Portfolio/PolygonCirclesDemonstration_Perspektiv.PNG"/>
+								<img alt="PolygonCircles Graphics Program" class="card-img-top" src="./Resources/Images/Portfolio/PolygonCirclesDemonstration_Perspektiv.PNG"/>
 								<div class="card-body border-top p-2" style="background-color: #F7F7F7;">
 									<h4 class="card-title my-1" style="font-weight: bolder;">PolygonCircles</h4>
 									<p class="card-text" style="line-height: 100%;">Graphics tool for exploring polygons inside circles, and creating interesting patterns</p>
-									<a href="/Downloads/Programming/PolygonCircles.v2.exe.zip" class="btn btn-primary py-1 bi-download"> Download (.zip)</a>
+									<a href="./Downloads/Programming/PolygonCircles.v2.exe.zip" class="btn btn-primary py-1 bi-download"> Download (.zip)</a>
 								</div>
 							</div>
 						</div>
@@ -147,7 +153,7 @@
 						<!-- MicroHTTP -->
 						<div class="col">
 							<div class="card mb-4 rounded-3 shadow-sm">
-								<img alt="MicroHTTP Web Server" class="card-img-top" src="/Resources/Images/Portfolio/MicroHTTP_Demo.PNG"/>
+								<img alt="MicroHTTP Web Server" class="card-img-top" src="./Resources/Images/Portfolio/MicroHTTP_Demo.PNG"/>
 								<div class="card-body border-top p-2" style="background-color: #F7F7F7;">
 									<h4 class="card-title my-1" style="font-weight: bolder;">MicroHTTP</h4>
 									<p class="card-text" style="line-height: 100%;">Lightweight command-line HTTP Server, with customisable MIME and port functionality</p>
@@ -159,11 +165,11 @@
 						<!-- CLAManager -->
 						<div class="col">
 							<div class="card mb-4 rounded-3 shadow-sm">
-								<img alt="Command-line Argument Manager" class="card-img-top" src="/Resources/Images/Portfolio/CLAManager_Perspektiv.png"/>
+								<img alt="Command-line Argument Manager" class="card-img-top" src="./Resources/Images/Portfolio/CLAManager_Perspektiv.png"/>
 								<div class="card-body border-top p-2" style="background-color: #F7F7F7;">
 									<h4 class="card-title my-1" style="font-weight: bolder;">CLA Manager</h4>
 									<p class="card-text" style="line-height: 100%;">Automates Command-line Argument managment, including mandatory CLAs, and /? for help</p>
-									<a href="/Downloads/Programming/Utilities/Utilities.CLAManager.VB" class="btn btn-primary py-1 bi-download"> Download (.VB)</a>
+									<a href="./Downloads/Programming/Utilities/Utilities.CLAManager.VB" class="btn btn-primary py-1 bi-download"> Download (.VB)</a>
 								</div>
 							</div>
 						</div>
@@ -171,7 +177,7 @@
 						<!-- SQLQueryRunner -->
 						<div class="col">
 							<div class="card mb-4 rounded-3 shadow-sm">
-								<img alt="SQL Query Runner Class" class="card-img-top" src="/Resources/Images/Portfolio/SQLQueryRunner.png"/>
+								<img alt="SQL Query Runner Class" class="card-img-top" src="./Resources/Images/Portfolio/SQLQueryRunner.png"/>
 								<div class="card-body border-top p-2" style="background-color: #F7F7F7;">
 									<h4 class="card-title my-1" style="font-weight: bolder;">SQLQueryRunner</h4>
 									<p class="card-text" style="line-height: 100%;">Simplifies .NET SQL Server interaction, including waiting for a Query result to change</p>
@@ -183,11 +189,11 @@
 						<!-- .NET Compiler Extentions -->
 						<div class="col">
 							<div class="card mb-4 rounded-3 shadow-sm">
-								<img alt=".NET v4.0 (Managed) Extention Methods" class="card-img-top" src="/Resources/Images/Portfolio/CompilerExtentions_Perspektiv.png"/>
+								<img alt=".NET v4.0 (Managed) Extention Methods" class="card-img-top" src="./Resources/Images/Portfolio/CompilerExtentions_Perspektiv.png"/>
 								<div class="card-body border-top p-2" style="background-color: #F7F7F7;">
 									<h4 class="card-title my-1" style="font-weight: bolder;">.NET Extentions</h4>
 									<p class="card-text" style="line-height: 100%;">A myriad of .NET Compiler Extention Methods for primative types, Graphics, etc...</p>
-									<a href="/Downloads/Programming/Utilities/MullNet.CompilerExtentions.VB" class="btn btn-primary py-1 bi-download"> Download (.VB)</a>
+									<a href="./Downloads/Programming/Utilities/MullNet.CompilerExtentions.VB" class="btn btn-primary py-1 bi-download"> Download (.VB)</a>
 								</div>
 							</div>
 						</div>
@@ -195,11 +201,11 @@
 						<!-- EmptyFolderDel -->
 						<div class="col">
 							<div class="card mb-4 rounded-3 shadow-sm">
-								<img alt="Program for deleting empty folders within a directory" class="card-img-top" src="/Resources/Images/Portfolio/EmptyFolderDelDemonstration.png"/>
+								<img alt="Program for deleting empty folders within a directory" class="card-img-top" src="./Resources/Images/Portfolio/EmptyFolderDelDemonstration.png"/>
 								<div class="card-body border-top p-2" style="background-color: #F7F7F7;">
 									<h4 class="card-title my-1" style="font-weight: bolder;">EmptyFolderDel</h4>
 									<p class="card-text" style="line-height: 100%;">Identifies and can delete empty folders within a specified directory</p>
-									<a href="/Downloads/Programming/Utilities/EmptyFolderDel.exe.zip" class="btn btn-primary py-1 bi-download"> Download (.zip)</a>
+									<a href="./Downloads/Programming/Utilities/EmptyFolderDel.exe.zip" class="btn btn-primary py-1 bi-download"> Download (.zip)</a>
 								</div>
 							</div>
 						</div>
@@ -222,11 +228,11 @@
 						<!-- EPQ ProjectBox -->
 						<div class="col">
 							<div class="card mb-4 rounded-3 shadow-sm">
-								<img alt="DocScript" class="card-img-top" src="/Resources/Images/Portfolio/EPQ_Presentation_Delivery.png"/>
+								<img alt="DocScript" class="card-img-top" src="./Resources/Images/Portfolio/EPQ_Presentation_Delivery.png"/>
 								<div class="card-body border-top p-2" style="background-color: #F7F7F7;">
 									<h4 class="card-title my-1" style="font-weight: bolder;">EPQ</h4>
 									<p class="card-text" style="line-height: 100%;"><a href="https://www.youtube.com/watch?v=cpHXPY_Mjag" target="_blank"><em>[Presentation Video]</em></a> Extended research project on <em>means of solving the UK's Software Developer Shortage</em></p>
-									<a href="/Downloads/Research/Final_BenMullanL6S7_EPQ_Dissertation.pdf" target="_blank" class="btn btn-primary py-1 bi-download"> Download Paper (.pdf)</a>
+									<a href="./Downloads/Research/Final_BenMullanL6S7_EPQ_Dissertation.pdf" target="_blank" class="btn btn-primary py-1 bi-download"> Download Paper (.pdf)</a>
 								</div>
 							</div>
 						</div>
@@ -249,7 +255,7 @@
 						<!-- ServerRack -->
 						<div class="col">
 							<div class="card mb-4 rounded-3 shadow-sm">
-								<img alt="Server Rack" class="card-img-top" src="/Resources/Images/Portfolio/ServerRack.jpg"/>
+								<img alt="Server Rack" class="card-img-top" src="./Resources/Images/Portfolio/ServerRack.jpg"/>
 								<div class="card-body border-top p-2" style="background-color: #F7F7F7;">
 									<h4 class="card-title my-1" style="font-weight: bolder;">Server Rack</h4>
 									<p class="card-text" style="line-height: 105%;">Home Lab wooden server rack made from old bed slats</p>
@@ -261,7 +267,7 @@
 						<!-- Victor -->
 						<div class="col">
 							<div class="card mb-4 rounded-3 shadow-sm">
-								<img alt="Victor.MullNet.NET Server" class="card-img-top" src="/Resources/Images/Portfolio/VictorMullNetNET.JPG"/>
+								<img alt="Victor.MullNet.NET Server" class="card-img-top" src="./Resources/Images/Portfolio/VictorMullNetNET.JPG"/>
 								<div class="card-body border-top p-2" style="background-color: #F7F7F7;">
 									<h4 class="card-title my-1" style="font-weight: bolder;">Wooden Server</h4>
 									<p class="card-text" style="line-height: 105%;">Home Lab wooden server used as dedicated Hyper-V host</p>
@@ -273,7 +279,7 @@
 						<!-- Workshop Bench II -->
 						<div class="col">
 							<div class="card mb-4 rounded-3 shadow-sm">
-								<img alt="Workbench Two" class="card-img-top" src="/Resources/Images/Portfolio/WorkbenchII.jpg"/>
+								<img alt="Workbench Two" class="card-img-top" src="./Resources/Images/Portfolio/WorkbenchII.jpg"/>
 								<div class="card-body border-top p-2" style="background-color: #F7F7F7;">
 									<h4 class="card-title my-1" style="font-weight: bolder;">Workshop Bench II</h4>
 									<p class="card-text" style="line-height: 100%;">Secondary workbench for home Workshop, made from skip-salvaged materials</p>
@@ -291,7 +297,7 @@
 						<!-- Garden Beds -->
 						<div class="col">
 							<div class="card mb-4 rounded-3 shadow-sm">
-								<img alt="Garden Beds and A-Frames" class="card-img-top" src="/Resources/Images/Portfolio/GardenBed.jpg" />
+								<img alt="Garden Beds and A-Frames" class="card-img-top" src="./Resources/Images/Portfolio/GardenBed.jpg" />
 								<div class="card-body border-top p-2" style="background-color: #F7F7F7;">
 									<h4 class="card-title my-1" style="font-weight: bolder;">Garden Beds</h4>
 									<p class="card-text" style="line-height: 100%;">Built for school garden</p>
@@ -303,7 +309,7 @@
 						<!-- Greenhouse Window -->
 						<div class="col">
 							<div class="card mb-4 rounded-3 shadow-sm">
-								<img alt="Glass Window" class="card-img-top" src="/Resources/Images/Portfolio/GreenhouseWindow.JPG" />
+								<img alt="Glass Window" class="card-img-top" src="./Resources/Images/Portfolio/GreenhouseWindow.JPG" />
 								<div class="card-body border-top p-2" style="background-color: #F7F7F7;">
 									<h4 class="card-title my-1" style="font-weight: bolder;">Greenhouse Window</h4>
 									<p class="card-text" style="line-height: 100%;">Made from old glass ramekins</p>
@@ -315,7 +321,7 @@
 						<!-- Potting Bench -->
 						<div class="col">
 							<div class="card mb-4 rounded-3 shadow-sm">
-								<img alt="Potting Bench" class="card-img-top" src="/Resources/Images/Portfolio/PottingBench.jpg" />
+								<img alt="Potting Bench" class="card-img-top" src="./Resources/Images/Portfolio/PottingBench.jpg" />
 								<div class="card-body border-top p-2" style="background-color: #F7F7F7;">
 									<h4 class="card-title my-1" style="font-weight: bolder;">Potting Bench</h4>
 									<p class="card-text" style="line-height: 100%;">Made from old industrial doors</p>
@@ -327,7 +333,7 @@
 						<!-- Hanging Monitor Arms -->
 						<div class="col">
 							<div class="card mb-4 rounded-3 shadow-sm">
-								<img alt="Monitors hanging from a bar" class="card-img-top" src="/Resources/Images/Portfolio/HangingMonitorArms.JPG" />
+								<img alt="Monitors hanging from a bar" class="card-img-top" src="./Resources/Images/Portfolio/HangingMonitorArms.JPG" />
 								<div class="card-body border-top p-2" style="background-color: #F7F7F7;">
 									<h4 class="card-title my-1" style="font-weight: bolder;">Hanging Monitor Arms</h4>
 									<p class="card-text" style="line-height: 100%;">Simple 3-piece design</p>
@@ -339,7 +345,7 @@
 						<!-- Woodturning -->
 						<div class="col">
 							<div class="card mb-4 rounded-3 shadow-sm">
-								<img alt="Woodturning" class="card-img-top" src="/Resources/Images/Portfolio/Woodturning.JPG" />
+								<img alt="Woodturning" class="card-img-top" src="./Resources/Images/Portfolio/Woodturning.JPG" />
 								<div class="card-body border-top p-2" style="background-color: #F7F7F7;">
 									<h4 class="card-title my-1" style="font-weight: bolder;">Woodturning</h4>
 									<p class="card-text" style="line-height: 100%;">Small wooden bowls and spindles made from Pine, Cherry, and Oak on my mini wood Lathe</p>
@@ -351,7 +357,7 @@
 						<!-- Bubble Stool -->
 						<div class="col">
 							<div class="card mb-4 rounded-3 shadow-sm">
-								<img alt="(Award-winning!) Bubble Stool" class="card-img-top" src="/Resources/Images/Portfolio/BubbleStool.JPG" />
+								<img alt="(Award-winning!) Bubble Stool" class="card-img-top" src="./Resources/Images/Portfolio/BubbleStool.JPG" />
 								<div class="card-body border-top p-2" style="background-color: #F7F7F7;">
 									<h4 class="card-title my-1" style="font-weight: bolder;">Bubble Stool</h4>
 									<p class="card-text" style="line-height: 100%;"> Made from European Ash. Won the "Young Furniture Maker's" Competition</p>
@@ -363,10 +369,10 @@
 						<!-- Photography Arm -->
 						<div class="col">
 							<div class="card mb-4 rounded-3 shadow-sm">
-								<img alt="Photography Arm [JHGS]" class="card-img-top" src="/Resources/Images/Portfolio/CameraArmIICad.png" />
+								<img alt="Photography Arm [JHGS]" class="card-img-top" src="./Resources/Images/Portfolio/CameraArmIICad.png" />
 								<div class="card-body border-top p-2" style="background-color: #F7F7F7;">
 									<h4 class="card-title my-1" style="font-weight: bolder;">Photography Arm</h4>
-									<p class="card-text" style="line-height: 100%;"><a href="/Downloads/FinalRC1_32_19042023_BenMullan_ALevel_ProductDesign_NEA.pdf" target="_blank">[Write-up]</a> IBeam-mounted parallelogram to hold a camera or monitor</p>
+									<p class="card-text" style="line-height: 100%;"><a href="./Downloads/FinalRC1_32_19042023_BenMullan_ALevel_ProductDesign_NEA.pdf" target="_blank">[Write-up]</a> IBeam-mounted parallelogram to hold a camera or monitor</p>
 									<button type="button" onclick="$('#ImageExpandModalImage').attr('src', this.parentElement.parentElement.getElementsByTagName('img')[0].src); $('#ImageExpandModal').modal('show');" class="btn btn-primary py-1 bi-arrows-angle-expand"> Expand</button>
 								</div>
 							</div>
@@ -375,7 +381,7 @@
 						<!-- SuitcasePC -->
 						<div class="col">
 							<div class="card mb-4 rounded-3 shadow-sm">
-								<img alt="Optiplex with a monitor in a Suitcase" class="card-img-top" src="/Resources/Images/Portfolio/SuitcasePC.jpg" />
+								<img alt="Optiplex with a monitor in a Suitcase" class="card-img-top" src="./Resources/Images/Portfolio/SuitcasePC.jpg" />
 								<div class="card-body border-top p-2" style="background-color: #F7F7F7;">
 									<h4 class="card-title my-1" style="font-weight: bolder;">SuitcasePC</h4>
 									<p class="card-text" style="line-height: 100%;"><em>[Work in Progress]</em> Optiplex built into an old suitcase with a projector and Monitor</p>
@@ -402,12 +408,12 @@
 						<!-- Advertisment Music One -->
 						<div class="col">
 							<div class="card mb-4 rounded-3 shadow-sm">
-								<img alt="A plant sprouting" class="card-img-top" src="/Resources/Images/Portfolio/AdvertismentMusicOne_Banner.JPG"/>
+								<img alt="A plant sprouting" class="card-img-top" src="./Resources/Images/Portfolio/AdvertismentMusicOne_Banner.JPG"/>
 								<div class="card-body border-top p-2" style="background-color: #F7F7F7;">
 									<h4 class="card-title my-1" style="font-weight: bolder;">Advertisement Music One</h4>
 									<p class="card-text" style="line-height: 105%;">(Not quite sure what's going on in this one actually)</p>
 									<audio controls="true" class="btn btn-primary">
-										<source src="/Downloads/Music/AdvertismentMusicOne_DistributionCopy_TrebbleBoosted.MP3" type="audio/mpeg">
+										<source src="./Downloads/Music/AdvertismentMusicOne_DistributionCopy_TrebbleBoosted.MP3" type="audio/mpeg">
 										This WebBrowser does not support HTML5 Audio. Download the MP3 manually from the src...
 									</audio>
 								</div>
@@ -417,11 +423,11 @@
 						<!-- The Conker Sprouts -->
 						<div class="col">
 							<div class="card mb-4 rounded-3 shadow-sm">
-								<img alt="A plant sprouting" class="card-img-top" src="/Resources/Images/Portfolio/TheConkerSprouts.JPG"/>
+								<img alt="A plant sprouting" class="card-img-top" src="./Resources/Images/Portfolio/TheConkerSprouts.JPG"/>
 								<div class="card-body border-top p-2" style="background-color: #F7F7F7;">
 									<h4 class="card-title my-1" style="font-weight: bolder;">The Conker Sprouts</h4>
 									<p class="card-text" style="line-height: 105%;">Inspired by the idea of, well... a Conker Sprouting</p>
-									<button type="button" onclick="$('#VideoExpandModalVideo').get(0).src = ('/Downloads/Music/TheConkerSprouts.MP4'); $('#VideoExpandModal').modal('show');" class="btn btn-primary py-1 my-2 bi-play-circle"> Play</button>
+									<button type="button" onclick="$('#VideoExpandModalVideo').get(0).src = ('./Downloads/Music/TheConkerSprouts.MP4'); $('#VideoExpandModal').modal('show');" class="btn btn-primary py-1 my-2 bi-play-circle"> Play</button>
 								</div>
 							</div>
 						</div>
@@ -429,12 +435,12 @@
 						<!-- The Knights Assemble -->
 						<div class="col">
 							<div class="card mb-4 rounded-3 shadow-sm">
-								<img alt="A Waveform on a blue background" class="card-img-top" src="/Resources/Images/Portfolio/TheConkerSprouts_Waveform_Perspektiv.png"/>
+								<img alt="A Waveform on a blue background" class="card-img-top" src="./Resources/Images/Portfolio/TheConkerSprouts_Waveform_Perspektiv.png"/>
 								<div class="card-body border-top p-2" style="background-color: #F7F7F7;">
 									<h4 class="card-title my-1" style="font-weight: bolder;">The Knights Assemble</h4>
 									<p class="card-text" style="line-height: 105%;">Two chords</p>
 									<audio controls="true" class="btn btn-primary">
-										<source src="/Downloads/Music/TheKnightsAssemble.MP3" type="audio/mpeg">
+										<source src="./Downloads/Music/TheKnightsAssemble.MP3" type="audio/mpeg">
 										This WebBrowser does not support HTML5 Audio. Download the MP3 manually from the src...
 									</audio>
 								</div>
@@ -444,12 +450,12 @@
 						<!-- The Mountain Stands -->
 						<div class="col">
 							<div class="card mb-4 rounded-3 shadow-sm">
-								<img alt="A Waveform on a blue background" class="card-img-top" src="/Resources/Images/Portfolio/TheConkerSprouts_Waveform_Perspektiv.png"/>
+								<img alt="A Waveform on a blue background" class="card-img-top" src="./Resources/Images/Portfolio/TheConkerSprouts_Waveform_Perspektiv.png"/>
 								<div class="card-body border-top p-2" style="background-color: #F7F7F7;">
 									<h4 class="card-title my-1" style="font-weight: bolder;">The Mountain Stands</h4>
 									<p class="card-text" style="line-height: 105%;">Composed for a nature scene</p>
 									<audio controls="true" class="btn btn-primary">
-										<source src="/Downloads/Music/TheMountainStands.MP3" type="audio/mpeg">
+										<source src="./Downloads/Music/TheMountainStands.MP3" type="audio/mpeg">
 										This WebBrowser does not support HTML5 Audio. Download the MP3 manually from the src...
 									</audio>
 								</div>
@@ -459,12 +465,12 @@
 						<!-- Piano Playing -->
 						<div class="col">
 							<div class="card mb-4 rounded-3 shadow-sm">
-								<img alt="An old Piano" class="card-img-top" src="/Resources/Images/Portfolio/OldPiano.JPG"/>
+								<img alt="An old Piano" class="card-img-top" src="./Resources/Images/Portfolio/OldPiano.JPG"/>
 								<div class="card-body border-top p-2" style="background-color: #F7F7F7;">
 									<h4 class="card-title my-1" style="font-weight: bolder;">(Random) Piano Playing</h4>
 									<p class="card-text" style="line-height: 105%;">Untitled arrangements...</p>
 									<audio controls="true" class="btn btn-primary">
-										<source src="/Downloads/Music/PianoPlaying.MP3" type="audio/mpeg">
+										<source src="./Downloads/Music/PianoPlaying.MP3" type="audio/mpeg">
 										This WebBrowser does not support HTML5 Audio. Download the MP3 manually from the src...
 									</audio>
 								</div>
@@ -474,12 +480,12 @@
 						<!-- Piano Playing -->
 						<div class="col">
 							<div class="card mb-4 rounded-3 shadow-sm">
-								<img alt="An old Piano" class="card-img-top" src="/Resources/Images/Portfolio/OldPiano.JPG"/>
+								<img alt="An old Piano" class="card-img-top" src="./Resources/Images/Portfolio/OldPiano.JPG"/>
 								<div class="card-body border-top p-2" style="background-color: #F7F7F7;">
 									<h4 class="card-title my-1" style="font-weight: bolder;">Piano Playing II</h4>
 									<p class="card-text" style="line-height: 105%;">Unidentified-but-familiar tunes</p>
 									<audio controls="true" class="btn btn-primary">
-										<source src="/Downloads/Music/PianoPlayingII.M4A" type="audio/x-m4a">
+										<source src="./Downloads/Music/PianoPlayingII.M4A" type="audio/x-m4a">
 										This WebBrowser does not support HTML5 Audio. Download the M4A manually from the src...
 									</audio>
 								</div>
