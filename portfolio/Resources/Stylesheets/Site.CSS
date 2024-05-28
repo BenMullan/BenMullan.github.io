@@ -1,0 +1,21 @@
+﻿/*
+	File:		BM Site Stylesheet
+	Depends on:	Bootstrap
+	-
+	Author:		Ben Mullan 2022
+*/
+
+body, html { font-family: Inconsolata Variable Weight,Consolas,Courier New; }
+
+.site-title { color: #585858; font-weight: bold; }
+.site-heading { color: #585858; font-weight: bold; }
+.site-subheading { color: #585858; }
+
+a { color: #0080FF; }
+
+/* Makes the ProjectBoxes (Bootstrap Image Cards) the same height */
+.card-img-top {
+	width: 100%;
+	height: 10vw;
+	object-fit: cover;
+}
