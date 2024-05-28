@@ -1,3 +1,4 @@
 # BM Personal site
 
-[Old site](http://benm.eu5.org/)
+- [Portfolio](/portfolio/)
+- [Old site](http://benm.eu5.org/)
