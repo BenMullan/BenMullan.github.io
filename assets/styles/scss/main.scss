@@ -1,0 +1,72 @@
+/*
+	File:		main.scss - SASS stylesheet for BM personal site
+	Transpile:	npx sass --watch "./assets/styles/scss/":"./assets/styles/css/"
+	Author:		Ben Mullan 2024
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap");
+
+$c-subtle-grey:				#b3b3b3;
+$c-nearly-black:			#383838;
+
+html, body					{ height: 100vh; }
+
+body						{
+	
+	text-align:				center;
+	font-family:			"Cabin", sans-serif;
+	font-weight:			400;
+
+	margin:					0px;
+	display:				flex;
+	flex-direction:			column;
+	flex-wrap:				nowrap;
+	justify-content:		flex-start;
+	align-items:			center;
+	align-content:			center;
+	row-gap:				0px;
+	column-gap:				0px;
+
+}
+
+.item-bubbles-container		{
+
+	flex-grow:				1;
+	flex-shrink:			0;
+	flex-basis:				auto;
+
+	display:				flex;
+	flex-direction:			row;
+	flex-wrap:				wrap;
+	justify-content:		center;
+	align-items:			flex-end;
+	align-content:			center;
+	row-gap:				50px;
+	column-gap:				150px;
+	
+	& .item-bubble			{
+		
+		flex-grow:			0;
+		flex-shrink:		1;
+		flex-basis:			auto;
+		
+		text-decoration:	none;
+		color:				$c-nearly-black;
+		& > img				{ width: 350px; }
+
+		transition:			transform 0.1s;
+		&:hover				{ transform: scale(1.05); }
+		
+	}
+
+}
+
+footer						{
+
+	flex-grow:				0;
+	flex-shrink:			0;
+	flex-basis:				auto;
+
+	color:					$c-subtle-grey;
+
+}
