@@ -1,3 +1,5 @@
+REM `VBS` changed to `txt` to appease github-pages' server
+
 REM This script will download the latest versions of DSIDE, DSCLI, and DSExpr, into .\DocScript\
 REM It will then open the folder containing the binaries, and launch DSIDE
 REM Alternatively, you can download the Setup MSI from https://github.com/BenMullan/DocScript/releases/
