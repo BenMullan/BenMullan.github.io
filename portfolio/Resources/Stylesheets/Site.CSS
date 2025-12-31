@@ -7,6 +7,13 @@
 
 body, html { font-family: Inconsolata Variable Weight,Consolas,Courier New; }
 
+/* zoom out to 70% */
+/* body {
+    transform: scale(0.7);
+    transform-origin: top left;
+    width: 142.857%;
+} */
+
 .site-title { color: #585858; font-weight: bold; }
 .site-heading { color: #585858; font-weight: bold; }
 .site-subheading { color: #585858; }
