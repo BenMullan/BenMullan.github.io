@@ -58,6 +58,33 @@ body {
     }
 }
 
+dirlisting-container {
+    flex-grow:              1;
+    flex-shrink:            0;
+    flex-basis:             auto;
+
+    display:                flex;
+    flex-direction:         column;
+    flex-wrap:              nowrap;
+    justify-content:        center;
+    align-items:            center;
+    align-content:          center;
+    row-gap:                20px;
+    column-gap:             0px;
+
+    & .dirlisting-item {
+        flex-grow:          0;
+        flex-shrink:        1;
+        flex-basis:         auto;
+
+        text-decoration:    none;
+        color:              $c-nearly-black;
+
+        transition:         transform 0.1s;
+        &:hover             { transform: scale(1.05); }
+    }
+}
+
 footer {
     flex-grow:              0;
     flex-shrink:            0;
