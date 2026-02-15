@@ -15,9 +15,13 @@
         <script>
 
             const fetchDirectoryContents = async () => {
-                const response = await fetch("https://api.github.com/repos/BenMullan/BitsAndBobs/contents/MiscSource");
+
+                const _TARGET_REPO_DIR = "https://api.github.com/repos/BenMullan/BitsAndBobs/contents/MiscSource";
+
+                const response = await fetch(_TARGET_REPO_DIR);
                 const files = await response.json();
 
+                document.querySelector("#dir-name-title").textContent = _TARGET_REPO_DIR;
                 const ul = document.querySelector(".dirlisting-container ul");
                 ul.innerHTML = "";
 
@@ -59,10 +63,14 @@
     </head>
     <body>
 
+        <header>
+            <h1>index of <span id="dir-name-title">(no content loaded)</span></h1>
+        </header>
+
         <main class="dirlisting-container">
 
             <ul>
-                <li><a class="dirlisting-item" href="./">(no content loaded)</a></li>
+                <li class="dirlisting-item"><a href="./">(no content loaded)</a></li>
             </ul>
 
         </main>

@@ -77,6 +77,9 @@ body {
         flex-shrink:        1;
         flex-basis:         auto;
 
+        text-align:         left;
+        list-style-position: inside;
+
         color:              $c-nearly-black;
 
         transition:         transform 0.1s;

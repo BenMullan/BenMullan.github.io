@@ -71,6 +71,8 @@ body {
   flex-grow: 0;
   flex-shrink: 1;
   flex-basis: auto;
+  text-align: left;
+  list-style-position: inside;
   color: #383838;
   transition: transform 0.1s;
 }
