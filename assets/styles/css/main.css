@@ -1,7 +1,8 @@
 /*
-	File:		main.scss - SASS stylesheet for BM personal site
-	Transpile:	npx sass --watch "./assets/styles/scss/":"./assets/styles/css/"
-	Author:		Ben Mullan 2024
+    file:       main.scss - sass stylesheet for BM personal site
+    pre-req:    node.exe, and `npm i -g sass`
+    transpile:  npx sass --watch "./assets/styles/scss/":"./assets/styles/css/"
+    author:     Ben Mullan 2024..6
 */
 @import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap");
 html, body {
@@ -42,10 +43,12 @@ body {
   flex-basis: auto;
   text-decoration: none;
   color: #383838;
-  transition: transform 0.1s;
 }
 .item-bubbles-container .item-bubble > img {
   width: 350px;
+}
+.item-bubbles-container .item-bubble {
+  transition: transform 0.1s;
 }
 .item-bubbles-container .item-bubble:hover {
   transform: scale(1.05);
