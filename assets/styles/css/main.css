@@ -71,7 +71,6 @@ body {
   flex-grow: 0;
   flex-shrink: 1;
   flex-basis: auto;
-  text-decoration: none;
   color: #383838;
   transition: transform 0.1s;
 }

@@ -1,29 +1,73 @@
 <!--
-	file:	index.xhtml - standalone dynamic directory-listing generator page
-	author: Ben Mullan 2026
+    file:	index.xhtml - standalone dynamic directory-listing generator page
+    author: Ben Mullan 2026
 -->
 
 <!DOCTYPE HTML PUBLIC "" "">
 
 <html xmlns="http://www.w3.org/1999/xhtml">
-	<head>
-		
-		<title>{dir-listing}</title>
-		<link rel="stylesheet" href="/assets/styles/css/main.css" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
+    <head>
+        
+        <title>{dir-listing}</title>
+        <link rel="stylesheet" href="/assets/styles/css/main.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-	</head>
-	<body>
+        <script>
 
-		<main class="dirlisting-container">
+            const fetchDirectoryContents = async () => {
+                const response = await fetch("https://api.github.com/repos/BenMullan/BitsAndBobs/contents/MiscSource");
+                const files = await response.json();
 
-			<ul>
-                <li><a class="dirlisting-item" href="./">test</a></li>
+                const ul = document.querySelector(".dirlisting-container ul");
+                ul.innerHTML = "";
+
+                files.forEach(
+                    file => {
+                        const li = document.createElement("li");
+                        const a = document.createElement("a");
+
+                        a.className = "dirlisting-item";
+                        a.href = "#";
+                        a.textContent = file.name;
+
+                        a.addEventListener(
+                            "click",
+                            async (event) => {
+                                event.preventDefault();
+
+                                const fileResponse = await fetch(file.download_url);
+                                const fileContent = await fileResponse.text();
+
+                                const newWindow = window.open("", "_blank");
+                                newWindow.document.open();
+                                newWindow.document.write(fileContent);
+                                newWindow.document.close();
+                            }
+                        );
+
+                        li.appendChild(a);
+                        ul.appendChild(li);
+                    }
+                );
+            }
+
+            // wunse d' page loads, fetch() the repository dir-listing, & render hereonto
+            document.addEventListener("DOMContentLoaded", fetchDirectoryContents);
+
+        </script>
+
+    </head>
+    <body>
+
+        <main class="dirlisting-container">
+
+            <ul>
+                <li><a class="dirlisting-item" href="./">(no content loaded)</a></li>
             </ul>
 
-		</main>
+        </main>
 
-		<footer>Ben Mullan © 2026</footer>
+        <footer>Ben Mullan © 2026</footer>
 
-	</body>
+    </body>
 </html>
