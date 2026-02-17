@@ -34,20 +34,31 @@
                         a.href = "#";
                         a.textContent = file.name;
 
-                        a.addEventListener(
-                            "click",
-                            async (event) => {
-                                event.preventDefault();
+                        const fileExtension = file.name.split(".").pop().toLowerCase();
 
-                                const fileResponse = await fetch(file.download_url);
-                                const fileContent = await fileResponse.text();
+                        // htm/html/xhtml → render as Document in new tab
+                        // anything else → download as text/plain directly
 
-                                const newWindow = window.open("", "_blank");
-                                newWindow.document.open();
-                                newWindow.document.write(fileContent);
-                                newWindow.document.close();
-                            }
-                        );
+                        if (["htm", "html", "xhtml"].includes(fileExtension)) {
+                            a.href = "#";
+                            a.addEventListener(
+                                "click",
+                                async (event) => {
+                                    event.preventDefault();
+
+                                    const fileResponse = await fetch(file.download_url);
+                                    const fileContent = await fileResponse.text();
+
+                                    const newWindow = window.open("", "_blank");
+                                    newWindow.document.open();
+                                    newWindow.document.write(fileContent);
+                                    newWindow.document.close();
+                                }
+                            );
+                        } else {
+                            a.href = file.download_url;
+                            a.target = "_blank";
+                        }
 
                         li.appendChild(a);
                         ul.appendChild(li);
