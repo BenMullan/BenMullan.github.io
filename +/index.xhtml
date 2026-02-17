@@ -32,11 +32,12 @@
                         li.className = "dirlisting-item";
                         
                         const a = document.createElement("a");
+                        a.target = "_blank";
                         a.textContent = file.name;
 
-                        // htm/html/xhtml → render as Document in new tab
-                        // other files → download as text/plain directly
-                        // directories → link to GitHub page
+                        // htm/html/xhtml   → render as Document in new tab
+                        // other files      → download as text/plain directly
+                        // directories      → link to GitHub page
                         
                         if (file.type === "dir") {
                             a.href = file.html_url;
@@ -62,14 +63,13 @@
                                 );
                             } else {
                                 a.href = file.download_url;
-                                a.target = "_blank";
                             }
 
                         }
 
                         li.appendChild(a);
                         ul.appendChild(li);
-                        
+
                     }
                 );
             }
