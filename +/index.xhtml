@@ -27,41 +27,49 @@
 
                 files.forEach(
                     file => {
+
                         const li = document.createElement("li");
                         li.className = "dirlisting-item";
                         
                         const a = document.createElement("a");
-                        a.href = "#";
                         a.textContent = file.name;
 
-                        const fileExtension = file.name.split(".").pop().toLowerCase();
-
                         // htm/html/xhtml → render as Document in new tab
-                        // anything else → download as text/plain directly
+                        // other files → download as text/plain directly
+                        // directories → link to GitHub page
+                        
+                        if (file.type === "dir") {
+                            a.href = file.html_url;
+                        } else if (file.type === "file") {
 
-                        if (["htm", "html", "xhtml"].includes(fileExtension)) {
-                            a.href = "#";
-                            a.addEventListener(
-                                "click",
-                                async (event) => {
-                                    event.preventDefault();
+                            const fileExtension = file.name.split(".").pop().toLowerCase();
 
-                                    const fileResponse = await fetch(file.download_url);
-                                    const fileContent = await fileResponse.text();
+                            if (["htm", "html", "xhtml"].includes(fileExtension)) {
+                                a.href = "#";
+                                a.addEventListener(
+                                    "click",
+                                    async (event) => {
+                                        event.preventDefault();
 
-                                    const newWindow = window.open("", "_blank");
-                                    newWindow.document.open();
-                                    newWindow.document.write(fileContent);
-                                    newWindow.document.close();
-                                }
-                            );
-                        } else {
-                            a.href = file.download_url;
-                            a.target = "_blank";
+                                        const fileResponse = await fetch(file.download_url);
+                                        const fileContent = await fileResponse.text();
+
+                                        const newWindow = window.open("", "_blank");
+                                        newWindow.document.open();
+                                        newWindow.document.write(fileContent);
+                                        newWindow.document.close();
+                                    }
+                                );
+                            } else {
+                                a.href = file.download_url;
+                                a.target = "_blank";
+                            }
+
                         }
 
                         li.appendChild(a);
                         ul.appendChild(li);
+                        
                     }
                 );
             }
@@ -75,7 +83,7 @@
     <body>
 
         <header>
-            <h1>index of <span id="dir-name-title">(no content loaded)</span></h1>
+            <h1><span id="dir-name-title">(no content loaded)</span></h1>
         </header>
 
         <main class="dirlisting-container">
