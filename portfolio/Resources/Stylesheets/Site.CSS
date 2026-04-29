@@ -2,17 +2,19 @@
 	File:		BM Site Stylesheet
 	Depends on:	Bootstrap
 	-
-	Author:		Ben Mullan 2022
+	Author:		Ben Mullan 202{2,6}
 */
 
-body, html { font-family: Inconsolata Variable Weight,Consolas,Courier New; }
+html, body { font-family: Inconsolata Variable Weight,Consolas,Courier New; margin: 0; padding: 0; }
 
-/* zoom out to 70% */
+/* zoom out to 85% */
 body {
-    transform: scale(0.85);
-    transform-origin: top left;
+    zoom: 0.85;
     width: 117.647%;
+    min-height: 100vh;
 }
+
+html { overflow-x: hidden; }
 
 .site-title { color: #585858; font-weight: bold; }
 .site-heading { color: #585858; font-weight: bold; }
