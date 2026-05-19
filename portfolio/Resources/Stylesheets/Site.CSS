@@ -10,7 +10,6 @@ html, body { font-family: Inconsolata Variable Weight,Consolas,Courier New; marg
 /* zoom out to 85% */
 body {
     zoom: 0.85;
-    width: 117.647%;
     min-height: 100vh;
 }
 
