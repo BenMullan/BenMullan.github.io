@@ -5,12 +5,21 @@
 	Author:		Ben Mullan 202{2,6}
 */
 
-html, body { font-family: Inconsolata Variable Weight,Consolas,Courier New; margin: 0; padding: 0; }
+html, body {
+    font-family: Inconsolata Variable Weight,Consolas,Courier New;
+    margin: 0;
+    padding: 0;
+}
 
 /* zoom out to 85% */
 body {
     zoom: 0.85;
     min-height: 100vh;
+}
+
+.modal, .modal-dialog, .modal-backdrop {
+    zoom: 0.85;
+    transform-origin: top center;
 }
 
 html { overflow-x: hidden; }
@@ -21,7 +30,7 @@ html { overflow-x: hidden; }
 
 a { color: #0080FF; }
 
-/* Makes the ProjectBoxes (Bootstrap Image Cards) the same height */
+/* Make the ProjectBoxes (Bootstrap Image Cards) the same height */
 .card-img-top {
 	width: 100%;
 	height: 10vw;
