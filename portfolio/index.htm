@@ -242,6 +242,20 @@
 					<div class="h3 site-subheading">Software & CyberSec</div>
 					<div class="row row-cols-1 row-cols-md-3 mb-5 mt-1 text-center">
 
+                        <!-- Industry Talk ProjectBox -->
+                        <div class="col">
+                            <div class="card mb-4 rounded-3 shadow-sm">
+                                <a href="https://www.youtube.com/watch?v=yysrDgi2_X4" target="_blank">
+                                    <img alt="What they didn't teach you in cyber class" class="card-img-top" src="./Resources/Images/Portfolio/cybersoc-talk--youtube-thumb.png"/>
+                                </a>
+                                <div class="card-body border-top p-2" style="background-color: #F7F7F7;">
+                                    <h4 class="card-title my-1" style="font-weight: bolder;">Cybersecurity Industry Talk</h4>
+                                    <p class="card-text" style="line-height: 100%;">Presented to the University of Exeter's Cyber Security Society (October of 2026)</p>
+                                    <a href="https://www.youtube.com/watch?v=yysrDgi2_X4" target="_blank" class="btn btn-primary py-1 bi-youtube"> Watch Video</a>
+                                </div>
+                            </div>
+                        </div>
+
                         <!-- Embedded Chromium Everywhere ProjectBox -->
                         <div class="col">
                             <div class="card mb-4 rounded-3 shadow-sm">
@@ -249,7 +263,7 @@
                                     <img alt="Embedded Chromium Everywhere" class="card-img-top" src="./Resources/Images/Portfolio/ece-talk--youtube-thumb.png"/>
                                 </a>
                                 <div class="card-body border-top p-2" style="background-color: #F7F7F7;">
-                                    <h4 class="card-title my-1" style="font-weight: bolder;">embedded Chromium everywhere</h4>
+                                    <h4 class="card-title my-1" style="font-weight: bolder;">embedded chromium everywhere</h4>
                                     <p class="card-text" style="line-height: 100%;"><a href="https://github.com/BenMullan/ece-talk" target="_blank"><em>[Code on GitHub]</em></a> Conference talk at BSides Exeter 2026; on chromium applications (eg) ms-word/teams/slack/discord!</p>
                                     <a href="https://youtu.be/yLxGzo9OSo4" target="_blank" class="btn btn-primary py-1 bi-youtube"> Watch Video</a>
                                 </div>
@@ -590,7 +604,7 @@
 						<button type="button" class="btn btn-primary" data-dismiss="modal" onclick="$('#ImageExpandModal').modal('hide');">Close</button>
 					</div>
 					<div class="modal-body">
-						<img alt="This image is filled in dynamically" src="" id="ImageExpandModalImage" class="img-fluid rounded" style="display: block; margin-left: auto; margin-right: auto;" />
+						<img alt="This image is filled-in dynamically" src="" id="ImageExpandModalImage" class="img-fluid rounded" style="display: block; margin-left: auto; margin-right: auto;" />
 					</div>
 					<!-- <div class="modal-footer">
 						<button type="button" class="btn btn-primary" data-dismiss="modal" onclick="$('#ImageExpandModal').modal('hide');">Close</button>
@@ -620,10 +634,9 @@
 					function () {
 
 						/* Stop playing the video when the Modal Popup is closed */
-						$("#VideoExpandModal").on("hide.bs.modal",
-							function () {
-								$('#VideoExpandModalVideo').get(0).pause();
-							}
+						$("#VideoExpandModal").on(
+                            "hide.bs.modal",
+							function () { $('#VideoExpandModalVideo').get(0).pause(); }
 						);
 
 					}
