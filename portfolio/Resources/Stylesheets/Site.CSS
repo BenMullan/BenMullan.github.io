@@ -17,11 +17,6 @@ body {
     min-height: 100vh;
 }
 
-.modal, .modal-dialog, .modal-backdrop {
-    zoom: 0.85;
-    transform-origin: top center;
-}
-
 html { overflow-x: hidden; }
 
 .site-title { color: #585858; font-weight: bold; }
